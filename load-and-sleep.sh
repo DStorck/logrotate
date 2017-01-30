@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -x
-
+echo 'load and sleep is loading and sleeping'
 #  copy the script logrotate-run.sh to the 15 minute crontab entry
 cp run-logrotate.sh /etc/periodic/15min/
 if [ $? -ne 0 ]; then
