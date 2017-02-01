@@ -9,3 +9,5 @@ for app_dir in $(find "$app_logs" -Bmin +30 -type d -maxdepth 1 -mindepth 1); do
     rm -rf "${app_dir}"
   fi
 done
+
+echo 'clean-completed pods was run'
