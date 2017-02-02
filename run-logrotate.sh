@@ -1,1 +1,1 @@
-echo "about to logrotate" && logrotate logrotate.conf
+logrotate logrotate.conf
