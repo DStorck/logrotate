@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo 'about to run clean-completed pods'
+
 app_logs=$ALLAPPLICATIONLOGS
 for app_dir in $(find "$app_logs" -Bmin +30 -type d -maxdepth 1 -mindepth 1); do
   total_files=$(find "$app_dir" -type f | wc -l )
@@ -9,5 +11,3 @@ for app_dir in $(find "$app_logs" -Bmin +30 -type d -maxdepth 1 -mindepth 1); do
     rm -rf "${app_dir}"
   fi
 done
-
-echo 'clean-completed pods was run'
