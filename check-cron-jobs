@@ -1,0 +1,1 @@
+echo "this is a cron job test. if jobs are running then this should echo out every 15 minutes"
