@@ -10,7 +10,7 @@ log rotatations.
 # entrypoint
 the script `load-and-sleep.sh` will load logrotate's execution script into
 the 15 minute periodic run folder.  the execution script is
-`/run-logrotate.sh` and contains a call to execute logrotate
+`/run-logrotate` and contains a call to execute logrotate
 with the below config file.  
 
 # config
